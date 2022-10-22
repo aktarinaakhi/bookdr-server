@@ -2,5 +2,8 @@ CREATE DATABASE bookdr;
 
 CREATE TABLE todo(
   todo_id SERIAL PRIMARY KEY,
-  description VARCHAR(255)
+  title VARCHAR(255) not null,
+	author VARCHAR(255) not null,
+	description VARCHAR (255) not null,
+  published_year DATE
 );
